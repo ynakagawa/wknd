@@ -1,0 +1,6 @@
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/schedulers/SimpleScheduledTaskTest.java
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/models/HelloWorldModelTest.java
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/listeners/SimpleResourceListenerTest.java
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/servlets/SimpleServletTest.java
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/filters/LoggingFilterTest.java
+/Users/ynaka/Documents/ServicesMarketing/AdobeCustomerSolutionsServicesMarketingProductionProgram-p18253-1/core/src/test/java/com/adobe/aem/guides/wknd/core/testcontext/AppAemContext.java

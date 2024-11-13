@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'adobe-clean-regular';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../resources/fonts/AdobeClean-Regular.ttf") format("truetype"); 
+}
+
+@font-face {
+  font-family: 'adobe-clean-light';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../resources/fonts/AdobeClean-Light.ttf") format("truetype"); 
+}

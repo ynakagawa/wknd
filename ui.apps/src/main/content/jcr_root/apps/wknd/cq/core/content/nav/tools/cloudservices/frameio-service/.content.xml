@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Frame.io Connector Configuration"
+          jcr:description="Frame.io Connector Configuration"
+          id="frameio-cloud-configuration"
+          icon="cloud"
+          href="/apps/frame-io-assets-console/content/cloudservice/console.html/apps/frame-io-assets-console/templates/framecloudconfig"/>

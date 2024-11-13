@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <actions jcr:primaryType="nt:unstructured">
+            <selection jcr:primaryType="nt:unstructured">
+                <quickpublish
+                    granite:class="foundation-collection-action cq-damadmin-admin-checkout-restricted"
+                    granite:rel="cq-siteadmin-admin-actions-publish-activator"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/pulldown"
+                    activeSelectionCount="multiple"
+                    icon="globe"
+                    text="Quick Publish"
+                    title="Quick Publish"
+                    variant="actionBar">
+                    <items jcr:primaryType="nt:unstructured">
+                        <now
+                            granite:class="cq-damadmin-admin-actions-publish-activator"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/collection/actionlink"
+                            ignoreRel="{Boolean}true"
+                            target=".cq-damadmin-admin-childpages"
+                            text="Publish to AEM"
+                            trackingFeature="aem:assets:files:publish">
+                            <data
+                                jcr:primaryType="nt:unstructured"
+                                referenceSrc.url="/libs/wcm/core/content/reference.json?_charset_=utf-8{&amp;path*}"
+                                src="/mnt/overlay/dam/gui/content/commons/publish.html"
+                                wizardSrc.uritemplate="/mnt/overlay/dam/gui/content/assets/publishassetwizard.html?_charset_=utf-8{&amp;item*}"/>
+                        </now>
+                        <mppublish
+                            granite:rel="cq-damadmin-admin-actions-mpshare-activator"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/collection/actionlink"
+                            activeSelectionCount="multiple"
+                            target=".cq-damadmin-admin-childpages"
+                            text="Publish to Brand Portal"
+                            trackingFeature="aem:assets:asset:brandportal:publish">
+                            <data
+                                jcr:primaryType="nt:unstructured"
+                                src="/mnt/overlay/dam/gui/content/commons/dialogs/items/mppublish.html"/>
+                            <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
+                                expression="{Boolean}true"/>
+                        </mppublish>
+                        <mpsourcingflag
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                            name="asset-sourcing-flag"
+                            value="true">
+                            <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/gui/coral/components/admin/renderconditions/sync-config"
+                                type="mediaportal"/>
+                        </mpsourcingflag>
+                        <dmpublish
+                            granite:rel="cq-damadmin-admin-actions-dmpublish-activator"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/collection/actionlink"
+                            activeSelectionCount="multiple"
+                            target=".cq-damadmin-admin-childpages"
+                            text="Publish to Dynamic Media"
+                            trackingFeature="aem:assets:asset:dynamicmedia:publish">
+                            <data jcr:primaryType="nt:unstructured"/>
+                            <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/gui/components/s7dam/dmrenderconditions/selectivepublish"
+                                path="${ requestPathInfo.suffix }"/>
+                        </dmpublish>
+                        <export_frameio
+                            granite:class="frame-io-export"
+                            granite:rel="frameio.export"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/collection/actionlink"
+                            action="frame-io-assets-console.export"
+                            activeSelectionCount="single"
+                            target="foundation-collection"
+                            text="Publish to Frame.io"
+                            trackingFeature="aem:assets:asset:frameio:export">
+                            <data
+                                jcr:primaryType="nt:unstructured"
+                                action="export"/>
+                            <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/gui/coral/components/frameio/condition"
+                                isActionButton="{Boolean}true"/>
+                        </export_frameio>
+                    </items>
+                    <granite:rendercondition
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/renderconditions/simple"
+                        expression="{Boolean}true"/>
+                </quickpublish>
+            </selection>
+            <secondary jcr:primaryType="nt:unstructured">
+                <create jcr:primaryType="nt:unstructured">
+                    <items jcr:primaryType="nt:unstructured">
+                        <import_frame_io
+                            granite:class="frame-io-import"
+                            granite:rel="frameio.import"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/collection/actionlink"
+                            action="frame-io-assets-console.import"
+                            activeSelectionCount="single"
+                            icon="boxImport"
+                            target="foundation-collection"
+                            text="Import from Frame.io"
+                            trackingFeature="aem:assets:asset:frameio:import">
+                            <granite:rendercondition
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="dam/gui/coral/components/frameio/condition"
+                                isActionButton="{Boolean}true"/>
+                            <data
+                                jcr:primaryType="nt:unstructured"
+                                action="import"/>
+                        </import_frame_io>
+                    </items>
+                </create>
+            </secondary>
+        </actions>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:mixinTypes="[sling:VanityPath]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Cloud Service Instances"
+        sling:resourceType="granite/ui/components/shell/page"
+        consoleId="frameio-cloudservice-console">
+        <head jcr:primaryType="nt:unstructured">
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[cq.common.wcm,frameio.cloudconfig.clientlib]"/>
+        </head>
+        <actions
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/actionbar">
+            <secondary jcr:primaryType="nt:unstructured">
+                <create_visible
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/anchorbutton"
+                    href="/apps/frame-io-assets-console/content/cloudservice/create.html${requestPathInfo.suffix}"
+                    text="Create"
+                    variant="primary">
+                        <granite:rendercondition
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="dam/gui/coral/components/frameio/condition"
+                            isActionButton="{Boolean}false"/>
+                </create_visible>
+            </secondary>
+        </actions>
+        <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <cloudconfiglist
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="frame-io-assets-console/components/cloudconfig/cloudconfiglist"
+                    configPath="/conf/frame-io-assets-console/settings/cloudconfigs"
+                    devtoken="admin"
+                    name="frameioconnector"
+                    template="/apps/frame-io-assets-console/templates/framecloudconfig"
+                    title="admin"/>
+            </items>
+        </content>
+        <title
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/text"
+            text="Frame.io Cloud Configuration"/>
+    </jcr:content>
+</jcr:root>
