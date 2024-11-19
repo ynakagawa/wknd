@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/it/e2e-selenium/e2e-selenium.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/it/e2e-selenium/e2e-selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/it/e2e-selenium-utils/e2e-selenium-utils.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/it/e2e-selenium-utils/e2e-selenium-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/examples/examples.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/examples/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/it/http/http.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/it/http/http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/it/it.core/it.core.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/it/it.core/it.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/it.tests/it.tests.iml" filepath="$PROJECT_DIR$/it.tests/it.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/junit/junit.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/junit/junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/extensions/amp/bundle/src/main/main.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/extensions/amp/bundle/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/src/main/main2.iml" filepath="$PROJECT_DIR$/core/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/bundles/core/src/main/main3.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/bundles/core/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/aem-mock-plugin/src/main/main4.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/aem-mock-plugin/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/testing/aem-mock-plugin/src/test/test.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/testing/aem-mock-plugin/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/bundles/core/src/test/test2.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/bundles/core/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/src/test/test3.iml" filepath="$PROJECT_DIR$/core/src/test/test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aem-core-wcm-components/extensions/amp/bundle/src/test/test4.iml" filepath="$PROJECT_DIR$/aem-core-wcm-components/extensions/amp/bundle/src/test/test4.iml" />
+    </modules>
+  </component>
+</project>

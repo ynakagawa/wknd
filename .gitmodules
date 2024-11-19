@@ -1,0 +1,6 @@
+[submodule "aem-core-wcm-components"]
+	path = aem-core-wcm-components
+	url = https://github.com/adobe/aem-core-wcm-components
+[submodule "acs-aem-commons"]
+	path = acs-aem-commons
+	url = https://github.com/Adobe-Consulting-Services/acs-aem-commons
