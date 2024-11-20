@@ -187,9 +187,9 @@
                         
         <configuration>
                               
-          <source>1.8</source>
+          <source>11</source>
                               
-          <target>1.8</target>
+          <target>11</target>
                           
         </configuration>
                     
